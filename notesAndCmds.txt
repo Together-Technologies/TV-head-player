@@ -1,0 +1,2 @@
+
+ls *.mp4 | xargs -i% ffmpeg -i % -filter:v "scale=-1:240, crop=320:240:53:0" processed/%
